@@ -1,0 +1,175 @@
+.ws-blog-widget {
+    text-shadow: none;
+    min-height: 300px;
+}
+
+.ws-blog-widget > div {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wsb-embedded-search {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.wsb-embedded-search .icon-overlay svg {
+    width: 100%;
+    height: 100%;
+    fill: #000;
+}
+
+.wsb-embedded-search input {
+    box-sizing: border-box;
+    appearance: none;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+    color: #000;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em 0 1.25em;
+    width: 0;
+    height: 2em;
+    border: none;
+    outline: none;
+    transition: width .2s,padding .2s,margin .2s;
+    cursor: pointer;
+}
+
+.wsb-embedded-search .icon-overlay {
+    height: 1.5em;
+    width: 1.5em;
+    display: block;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    opacity: .5;
+}
+
+.wsb-post-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 25px;
+}
+
+
+.wsb-post-collection{
+    flex : 1;
+}
+
+.wsb-post-collection .wsb-post {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 60px;
+}
+
+.wsb-post.layout-classic .wsb-media-wrapper {
+
+    @apply sm:w-full sm:float-none md:float-left md:w-37    
+}
+
+.wsb-post .wsb-media-wrapper , .wsb-post .wsb-content-wrapper{
+    overflow: hidden;
+}
+
+.wsb-post.layout-classic .wsb-media {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.wsb-media .wsb-media-item.crop {
+    background-size: cover;
+}
+
+.wsb-media .wsb-media-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.wsb-post.layout-classic .wsb-content-wrapper {
+    @apply sm:w-full float-left md:w-63 pt-6 md:pl-20px md:pt-5px
+}
+
+.wsb-post .wsb-post-title {
+    font-size: 1.6875em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-weight: 600;
+}
+
+.wsb-post .wsb-post-meta, .wsb-post .wsb-author {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+}
+
+.wsb-post .wsb-post-content {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.wsb-post .wsb-post-buttons {
+    @apply md:mt-40px mt-30px 
+}
+
+.ws-blog-widget .wsb-btn {
+    @apply w-full md:w-auto 2xl:w-auto
+}
+
+.wsb-post .wsb-btn, .wsb-pagination .wsb-btn {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.wsb-btn, .wsb-btn:hover {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color .25s ease-out,color .25s ease-out;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 0;
+    padding: 0.85em 1em;
+    font-size: .875em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+
+.wsb-post.layout-classic:before, .wsb-post.layout-classic:after {
+    display: table;
+    content: " ";
+}
+
+.wsb-post.layout-classic:after {
+    clear: both;
+}
+
+.wsb-post-content p{
+    margin: 0 0 10px;
+}
+
+.wsb-post-collection .wsb-pagination {
+    margin-bottom: 10px;
+}

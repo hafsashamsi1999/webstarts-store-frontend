@@ -1,0 +1,1 @@
+.app-heading{font-size:60px;font-weight:700;line-height:1}.app-column{display:grid;gap:5rem;grid-template-columns:repeat(1,minmax(0,1fr));width:90%}@media (min-width:640px){.app-column{width:80%}}@media (min-width:1024px){.app-column{grid-template-columns:repeat(7,minmax(0,1fr));width:100%}}

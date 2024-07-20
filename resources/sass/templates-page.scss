@@ -1,0 +1,414 @@
+.browser-sm .browser-btn{
+    height: 11px;
+    margin-left: 5px;
+}
+
+.browser-sm .browser-btn:first-child {
+    margin-left: 7px;
+}
+
+.browser-sm .browser-bar {
+    height: 11px;
+    line-height: 11px;
+}
+
+.browser-sm .browser-btn::before {
+    line-height: 11px;
+    font-size: 5px;
+}
+
+#templates-page .browser-content::before {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.design-options {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -55px;
+    opacity: 0;
+    transition: opacity 450ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+.phone-view {
+    position: absolute;
+    top: -3px;
+    right: 5%;
+    width: 202px;
+    max-height: 397px;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease 0s, opacity 850ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+}
+
+.phone-view .svg-phone {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    background: url(https://cdn.secure.website/library/images/svg-iphoneX-mockup/iphone-x-minimal-buttons.svg) center -27px / 130% no-repeat;
+}
+
+.phone-vp {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    bottom: 0px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.address-bar {
+    position: absolute;
+    top: 31px;
+    left: 18px;
+    right: 18px;
+    height: 15px;
+    z-index: 5;
+    background-color: rgb(224, 226, 228);
+    color: rgb(119, 119, 119);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.phone-thumb {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    right: 8px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-position: center center;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+#templates-page .browser:hover .design-options {
+
+    opacity:1;
+    
+}
+
+#templates-page .browser:hover .browser-content::before{
+    
+    opacity:1;
+}
+
+#templates-page .browser:hover .phone-view{
+    opacity:1;
+    visibility: visible;
+}
+
+.dropdown {
+    position:absolute;
+    right:13px;
+    bottom:13px;
+    color:rgb(150,150,150);
+}
+
+.nav-pills{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: rgba(255,255,255,.84);
+    background-color: #03a9f4;
+}
+
+.nav-pills>li a:hover {
+    @apply text-primarycolor
+}
+
+.nav-pills>li>a {
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.ripple-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.nav-pills.with-arrows>li>a:before {
+    float: right;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: .85em;
+    line-height: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10px);
+    transition: all .1s linear;
+}
+
+.nav-pills.with-arrows>li.active>a:before, .nav-pills.with-arrows>li:focus>a:before, .nav-pills.with-arrows>li:hover>a:before {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.slideout-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 9998;
+    padding: 10px 0;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sub-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height:100%;
+    overflow-y: auto;
+    z-index: 9999;
+    padding: 10px 0;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.browse-categories{
+      cursor: pointer;
+    }
+
+    .browse-categories svg, .slideout-category .subCat-arrow{
+      cursor: pointer;
+      transform: rotate(265deg);
+      margin-top: 12.5px;
+      margin-left: 10px;
+    }
+
+    .back-subCat{
+      cursor: pointer;
+      font-size: 32px;
+    }
+
+.slideout-menu::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.sub-menu::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.slideout-menu.block, .sub-menu.block{
+    transform: translateX(0);
+        
+}
+
+ul li.show-arrow {
+    border-color: #fff;
+}
+
+ ul li.show-arrow > a {
+    width: 87%;
+    display: inline-block;
+}
+
+.slideout-menu ul li {
+    line-height: 1.4em;
+    font-size: 16px;
+    cursor : pointer;
+}
+
+.slideout-menu .nav-pills li a {
+    display: flex;
+    padding: 15px 20px;
+    text-decoration: none;
+    word-wrap: break-word;
+    
+}
+
+.slideout-menu .nav-pills li > span {
+    display: flex;
+    padding: 15px 20px;
+    text-decoration: none;
+    word-wrap: break-word;
+    
+}
+
+.slideout-menu .template-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.slideout-menu .template-dropdown-content.categories {
+  max-height: unset;
+  min-width: 230px;
+  left: 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 0;
+}
+
+.slideout-menu .template-dropdown-content {
+  display: block;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  max-height: unset;
+  height: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.slideout-menu .template-dropdown:hover .template-dropdown-content {
+    max-height: unset;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+}
+
+nav ul.nav.sub {
+    background-color: #f1f1f1;
+    margin-left: 0;
+    display:hidden;
+}
+
+nav ul.nav.sub li a {
+    padding-left: 25px;
+}
+
+nav ul.nav.sub li a:hover {
+        color: #03a9f4; 
+}
+
+.slideout-mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+
+.template-header-li{
+    @apply text-base font-medium text-black hover:text-gray-500 flex items-center py-4
+}
+
+
+.template-dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.template-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #ffffff ;
+  box-shadow: 0 2px 7px 0 rgb(0 0 0 / 9%);
+  z-index: 2;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+}
+
+.template-dropdown:hover .template-dropdown-content{
+  max-height: 408px;
+  opacity: 1;
+  visibility: visible;  
+}
+
+.template-dropdown-content.sort-by{
+    left: -45px;
+    padding: 30px 30px 36px 24px;
+    min-width: calc(100% + 108px);
+}
+
+.template-dropdown-content.categories{
+    min-width: 230px;
+    left: -20px;
+    padding-top: 29px;
+    padding-bottom: 45px;
+}
+
+.template-dropdown-content.categories .category-ul{
+    @apply list-none flex h-full
+}
+
+.template-dropdown-content.categories .category-li{
+    @apply px-20px mb-24px w-220px
+}
+
+.template-dropdown-content.categories .sub-category-ul{
+    @apply py-2 list-none space-y-2 text-btnsm mb-15px
+}
+
+.template-dropdown-content.categories .sub-category-ul li a{
+    @apply hover:text-primarycolor cursor-pointer
+}
+
+.template-dropdown-content.categories .sub-category-li{
+    @apply px-20px mb-24px w-220px
+}
+
+.template-dropdown-content .category-border{
+    @apply bg-gray-400 w-px h-340px
+}
+
+.template-dropdown-content.categories .category{
+    @apply py-2 text-paragraph font-bold hover:text-primarycolor
+}
+
+.template-dropdown-content.categories .sub-category{
+    @apply py-2 text-paragraph font-bold hover:text-primarycolor
+}

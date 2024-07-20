@@ -1,0 +1,10 @@
+.app-heading{
+    @apply text-appheading font-bold leading-none
+}
+.app-column{
+    @apply grid lg:grid-cols-7 grid-cols-1 gap-20 w-90 sm:w-4/5 lg:w-full
+}
+
+.app-paragraph{
+    
+}

@@ -1,0 +1,21 @@
+.index-pricing-header{
+	@apply sticky top-0 z-20 border border-gray-300 flex items-center text-center flex-1 py-30px px-15px max-h-350px flex-col bg-white
+}
+
+.index-pricing-grid{
+	--gridColumns: 3;
+    grid-template-columns: 388px repeat(var(--gridColumns),minmax(0,1fr));
+}
+
+.index-offers-grid{
+	--gridColumns: 2;
+    grid-template-columns: 388px repeat(var(--gridColumns),minmax(0,1fr));
+}
+
+.index-pricing-info{
+	@apply border border-gray-300 items-center flex h-52px px-20px
+}
+
+.index-pricing-details{
+	@apply border border-gray-300 justify-center items-center flex text-center
+}

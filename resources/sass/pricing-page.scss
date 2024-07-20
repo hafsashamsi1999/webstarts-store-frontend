@@ -1,0 +1,265 @@
+#pricing-page .card {
+    border: 1px solid #d9d9d9;
+}
+
+.pricing-header{
+    @apply min-h-330 max-h-375 md:h-375 lg:h-auto
+}
+
+.pricing-header p{
+    padding: 5px;
+    margin: 0 0 10px;
+}
+.span{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plan-name {
+    @apply text-abouttitle font-semibold mt-4
+}
+
+.plan-sub {
+    margin-top: 5px;
+}
+
+.hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #9e9e9e;
+    height: 1px;
+}
+
+.strike{
+    position:relative;
+}
+
+.strike:after {
+    content: " ";
+    border-bottom: 2px
+    solid rgba(204,0,0,.7);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;   
+    transform: rotateZ(-4deg);
+}
+
+.pricing-footer p{
+    padding: 5px;
+    margin: 0 0 10px;
+}
+
+.pricing-footer .btn {
+    margin-bottom: 20px;
+}
+
+.offer-btn{
+    @apply whitespace-nowrap inline-flex items-center justify-center px-6 py-2 font-medium text-textwhite 
+    }
+
+#pricing-page ul li {
+    position: relative;
+    padding: 15px 0;
+}
+
+#pricing-page .pricing-card-container ul li:nth-child(odd) {
+    background-color: #efefef;
+}
+
+.se-bg {
+    background-size: 125px auto;
+    width: 125px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -62.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url(https://static.secure.website/img2/googleyahoobing.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#pricing-page .se-bg {
+    @apply md:bg-125px md:w-125px md:-mt-8px md:-ml-62px md:h-16px lg:bg-170px lg:w-170px lg:-mt-10px lg:-ml-85px lg:h-20px
+}
+
+#pricing-page-phone .se-bg{
+    @apply bg-170px w-170px mt-2 -ml-85px h-20px
+}
+#pricing-page .se-bg.google-only {
+    @apply md:w-39px md:-ml-19px lg:w-54px lg:-ml-27px 
+}
+
+#pricing-page-phone .pricing-card-container .se-bg.google-only {
+    @apply w-54px mt-2 -ml-6
+}
+
+.pricing-card-info ul li{
+    margin-bottom: 2px;
+}
+
+#pricing-page .pricing-card-info ul li {
+    @apply md:pt-8px md:pr-0 lg:pt-15px
+}
+
+.pricing-card-info {
+    @apply lg:mt-330px md:mt-360px
+}
+
+.primary-label{
+    @apply p-1 mr-2 text-textwhite font-semibold text-label bg-primarycolor
+}
+
+#pricing-page .icon-set i {
+    display: inline-block;
+    color: #fff;
+    margin: 0 2px;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#pricing-page .icon-set i.fa-facebook {
+    background-color: #3b5998;
+}
+
+#pricing-page .icon-set i.fa-twitter {
+    background-color: #55acee;
+}
+
+#pricing-page .icon-set i.fa-instagram {
+    background-color: #3f729b;
+}
+
+#pricing-page .icon-set i.fa-pinterest {
+    background-color: #cc2127;
+}
+
+#pricing-page-phone .nav-tabs {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#pricing-page-phone .nav-tabs li {
+    float: left;
+    width: 50%;
+    padding: 0;
+}
+
+.nav-tabs>li.active {
+    border-color: rgba(0,0,0,.87);
+    background-color: rgba(0,0,0,.05);
+}
+
+.nav-tabs>li {
+    border-width: 0 0 2px;
+    border-style: solid;
+    margin-bottom: -1px;
+}
+
+.nav-tabs>li>a {
+    margin: 0;
+    border-radius: 0;
+    transition: all 450ms cubic-bezier(.23,1,.32,1) 0s;
+}
+
+#pricing-page-phone .nav-link h4 {
+    margin: 6px 0;
+}
+
+.price-div .amount {
+    font-weight: 700;
+    font-size: 500%;
+    line-height: 1;
+}
+
+#pricing-page-phone ul.key-features li {
+    padding: 8px 0 8px 10px;
+}
+
+#pricing-page-phone ul.key-features li i {
+    margin-right: 10px;
+}
+
+.text-success {
+    color: #4caf50;
+}
+
+#pricing-page-phone .red-strike {
+    position: relative;
+}
+
+#pricing-page-phone .red-strike:after {
+    content: '';
+    border-bottom: 2px solid red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.price-div .sign ,.price-div .period{
+    font-size: 170%;
+    
+}
+
+.free-banner.animate {
+    transform: translateY(0);
+}
+
+.free-banner {
+    transform: translateY(-100%);
+    transition: transform 1s ease-out;
+}
+
+.instagram-logo svg{
+    fill: url(#instagramGradient);
+}
+
+.instagram-logo-phone svg{
+    fill: url(#instaGradient);
+}
+
+.top-left-border-radius{
+    border-top-left-radius: 4px;
+}
+
+.top-right-border-radius{
+    border-top-right-radius: 4px;
+}
+
+.bottom-left-border-radius{
+    border-bottom-left-radius: 4px;
+}
+
+.bottom-right-border-radius{
+    border-bottom-right-radius: 4px;
+}
+
+.border-default-radius{
+    border-radius: 4px;
+}
+
+
+

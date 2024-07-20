@@ -1,0 +1,43 @@
+.browser-bar {
+    border-radius: 3px 3px 0 0;
+    height: 21px;
+    font-size: 1px;
+    background-color: #e0e0e0;
+    line-height: 26px;
+}
+
+.browser-btn {
+    display: inline-block;
+    height: 21px;
+    font-size: inherit;
+    margin-left: 6px;
+}
+
+.browser-btn:before {
+    content: "\25cf";
+    font-size: 9px;
+    line-height: 20px;
+    color: #7f7f7f;
+}
+
+.browser {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.browser-shadow {
+    box-shadow: rgb(0 0 0 / 6%) 0 3px 10px;
+}
+
+.browser-btn:first-child {
+    margin-left: 8px;
+}
+
+.browser-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    overflow: hidden;
+}

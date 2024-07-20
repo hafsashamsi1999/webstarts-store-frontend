@@ -1,0 +1,32 @@
+{
+    "theme_color": "#7ed321",
+    "background_color": "#f1f1f1",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/",
+    "app_name": "WebStarts LLC",
+    "short_name": "WebStarts",
+    "description": "Make a free website, Online Store, or Blog with the #1 free website builder and get ranked on Google, Yahoo and Bing. When you create a free website, it includes free web hosting.",
+    "icons": [
+        {
+            "src": "https://cdn.secure.website/img2/fav/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.secure.website/img2/fav/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.secure.website/img2/fav/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn.secure.website/img2/fav/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
